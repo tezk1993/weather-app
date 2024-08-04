@@ -14,7 +14,7 @@ function App() {
   const [dateState, setDateState] = useState();
   const [timezone, setTimezone] = useState();
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=cb5ff6626a757b0f01317380e67324ad`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=${import.meta.env.VITE_WEATHER_API_KEY}`;
  
   useEffect(() => {
     getInitialLocation();
@@ -37,8 +37,8 @@ function App() {
       navigator.geolocation.getCurrentPosition(resolve, reject);
     });
     
-    axios.get(`https://api.tomtom.com/search/2/reverseGeocode/${pos.coords.latitude + ", " + pos.coords.longitude}.json?key=xVXzZ1fW2FtGEe7Rjh0h2fyWGdnVoW9R&radius=1000&mapcodes`).then((response) => {
-      axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${response.data.addresses[0].address.localName}&APPID=cb5ff6626a757b0f01317380e67324ad`).then((response) => {
+    axios.get(`https://api.tomtom.com/search/2/reverseGeocode/${pos.coords.latitude + ", " + pos.coords.longitude}.json?key=${import.meta.env.VITE_GEOCODE_API_KEY}&radius=1000&mapcodes`).then((response) => {
+      axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${response.data.addresses[0].address.localName}&APPID=${import.meta.env.VITE_WEATHER_API_KEY}`).then((response) => {
         setWeatherData(response.data);
         const cityFormatted = response.data.name.split(' ').join('_');
         setTimezone(getCountry(response.data.sys.country).timezones.find((element) => element.includes(cityFormatted)));
