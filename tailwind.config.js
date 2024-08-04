@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'background-pattern': "url('src/assets/backgroundSunset.jpg')",
+        'background-pattern': "url('public/backgroundSunset.jpg')",
       },
       right:{
         '3/4': '90%',
