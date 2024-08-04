@@ -1,0 +1,81 @@
+:root{
+    /*Colors*/
+        /*Primary*/
+        --color-primary: #C69107;
+        --color-primary-light80: color-mix(in hwb, var(--color-primary) 80%, white);
+        --color-primary-light60: color-mix(in hwb, var(--color-primary) 60%, white);
+
+        --color-primary-dark80: color-mix(in hwb, var(--color-primary) 80%, black);
+        --color-primary-dark60: color-mix(in hwb, var(--color-primary) 60%, black);
+       
+       
+        --color-secondary: #F5CB5C;
+        --color-900: #302302;
+        --color-800: #604705;
+        --color-700: #906b08;
+        --color-600: #c08e0b;
+        --color-500: #f0b20e;
+        --color-400: #f3c13e;
+        --color-300: #f6d16e;
+        --color-200: #f9e09e;
+        --color-100: #fcefce;
+        --color-secondary-light80: color-mix(in hwb, var(--color-secondary) 80%, white);
+        --color-secondary-light60: color-mix(in hwb, var(--color-secondary) 60%, white);
+
+        --color-secondary-dark80: color-mix(in hwb, var(--color-secondary) 80%, black);
+        --color-secondary-dark60: color-mix(in hwb, var(--color-secondary) 60%, black);
+
+        /*Text Colors*/
+        --color-bodytext: #f3f3f3;
+        --color-pagetitle: #ffffff;
+        --color-textaccent: #8d784079;
+        
+        /*Neutral*/
+        --color-lightdark: #252525;
+        --color-dark: #333533;
+        --color-dark50alpha: #3335337a;
+
+        /*ETC*/
+        --color-background: #242423;
+        --color-surface: #252525;
+        --color-error: #B00020;
+
+        --color-on-primary: #FFFFFF;
+        --color-on-secondary: #000000;
+        --color-on-background: #F5CB5C;
+        --color-on-surface: #000000;
+        --color-on-error: #0000;
+        
+
+   
+
+    /*Text*/
+        
+        /*fonts*/
+        /* --font-primary:"Inter", Arial, Helvetica, sans-serif;
+ */
+
+
+        /*Sizes*/
+        --size-largetext: clamp(1rem, 10vw + 1rem, 12rem);
+        --size-mediumtext: clamp(1rem, 10vw + 1rem, 6rem);
+        --size-largebodytext: clamp(0.5rem, 10vw + 0.5rem, 2rem);;
+        --size-bodytext: clamp(0.5rem, 10vw + 1rem, 1rem);
+        /*Weight*/
+        --weight-regular: 400;
+        --weight-semibold: 500;
+        --weight-bold: 700;
+        --weight-heavybold: 1000;
+
+
+    /*Spacing*/
+        --spacing-xxtralarge: 8rem;
+        --spacing-xtralarge: 6rem;
+        --spacing-large: 4rem;
+        --spacing-medium: 2rem;
+        --spacing-small: 1rem;
+        --spacing-xtrasmall: 0.5rem;
+        --spacing-xxtrasmall: 0.25rem;
+
+}
+
