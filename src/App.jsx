@@ -86,7 +86,7 @@ function App() {
     
     <div  className="h-svh w-full relative bg-opacity-10 bg-black text-black p-8 overflow-auto flex flex-col 
           before:content-['']  before:bg-background-pattern  bg-no-repeat before:bg-center before:bg-cover
-          before:top-0 before:left-0 before:absolute before:-z-10 before:w-full before:h-full before:object-cover" 
+          before:top-0 before:left-0 before:absolute before:-z-10 before:w-full before:h-full before:object-cover " 
     >
     {weatherData.main ?
       <>
