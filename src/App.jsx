@@ -121,7 +121,7 @@ function App() {
               {dateState ?<h3 className='.time'>{dateState}</h3> : <h3>00:00:00</h3>}
             </div>
 
-            <div className="flex justify-between min-w-max max-w-screen-xl w-2/5 gap-8 p-2 mx-auto rounded-md bg-white bg-opacity-30 text-center shadow-md shadow-black ">
+            <div className="flex justify-around min-w-max max-w-screen-xl w-2/5 gap-8 p-2 mx-auto rounded-md bg-white bg-opacity-30 text-center shadow-md shadow-black ">
               <div className="text-white flex flex-col gap-2">
                 <p className=" font-bold">{ConvertTemp(weatherData.main.feels_like)}</p> 
                 <p className="">Feels Like</p>
