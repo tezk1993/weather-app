@@ -109,8 +109,8 @@ function App() {
               <div>
                <h1>{ConvertTemp(weatherData.main.temp)}</h1> 
               </div>
-              <div className="w-fit relative ml-auto  md:-rotate-90 ">
-               <h3>{weatherData.weather[0].main}</h3> 
+              <div className="w-fit relative ml-auto md:left-20  md:top-20   md:-rotate-90 ">
+               <h2>{weatherData.weather[0].main}</h2> 
               </div>
           </div>
    
