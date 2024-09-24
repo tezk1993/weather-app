@@ -4,7 +4,7 @@ This is a simple **Weather App** built using **React**, **Vite**, **CSS**, **HTM
 
 ## 🚀 Demo
 
-Check out the live demo of the weather app [here](#).
+Check out the live demo of the weather app [here](https://mandatoryweatherapp.netlify.app).
 
 ## Features
 
